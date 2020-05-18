@@ -185,6 +185,7 @@ let wordToPath = (word) => {
   if(!word){
     return null
   }
+  word = word.toUpperCase();
   var pointer = 0
   var path = ""
   var joint = `M ${paths[word[0]].start[0]} ${paths[word[0]].start[1]}`
